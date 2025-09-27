@@ -1,0 +1,553 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Abdelhamed – Backend Developer & Tech Solutions</title>
+    <meta name="description" content="Abdelhamed - Backend Developer with 5+ years experience. Scalable systems, full-stack solutions, and team-based delivery.">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/emailjs-com@3/dist/email.min.js"></script>
+</head>
+<body>
+    <!-- Floating Navigation -->
+    <nav class="floating-nav" id="floatingNav">
+        <div class="nav-container">
+            <ul class="nav-links">
+                <li><a href="#hero" class="nav-link active" data-section="hero">Home</a></li>
+                <li><a href="#about" class="nav-link" data-section="about">About</a></li>
+                <li><a href="#skills" class="nav-link" data-section="skills">Skills</a></li>
+                <li><a href="#projects" class="nav-link" data-section="projects">Projects</a></li>
+                <li><a href="#experience" class="nav-link" data-section="experience">Experience</a></li>
+                <li><a href="#contact" class="nav-link" data-section="contact">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="hero" class="hero-section">
+        <div class="hero-bg">
+            <div class="floating-orb orb-1"></div>
+            <div class="floating-orb orb-2"></div>
+            <div class="floating-orb orb-3"></div>
+            <div class="grid-pattern"></div>
+        </div>
+        
+        <div class="hero-content">
+            <h1 class="hero-title">
+                <span class="title-line">Abdin</span>
+            </h1>
+            <p class="hero-subtitle">Backend Developer & Tech Solutions Provider</p>
+            <p class="hero-description">Scalable backend systems & full-stack solutions—solo or team-based delivery.</p>
+            
+            <div class="hero-buttons">
+                <button class="btn btn-primary" onclick="scrollToSection('contact')">
+                    Let's Work Together
+                    <svg class="btn-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor">
+                        <path d="M5 12h14M12 5l7 7-7 7"/>
+                    </svg>
+                </button>
+                <button class="btn btn-secondary" onclick="window.open('https://www.upwork.com/freelancers/~0116b3815d228f60d7', '_blank')">
+                    View Upwork Profile
+                    <svg class="btn-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor">
+                        <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6M15 3h6v6M10 14L21 3"/>
+                    </svg>
+                </button>
+            </div>
+        </div>
+
+        <div class="scroll-indicator">
+            <div class="scroll-mouse">
+                <div class="scroll-wheel"></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about-section">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">About Me</h2>
+                <p class="section-subtitle">Building the future with scalable backend solutions</p>
+            </div>
+
+            <div class="about-content">
+                <div class="about-text">
+                    <p class="about-description">
+                        I'm Abdelhamed, a <span class="highlight">Backend Developer</span> with 
+                        <span class="highlight">5+ years of experience</span> building scalable, high-performance systems.
+                        I work both as an independent <span class="highlight">freelancer</span> and with a trusted 
+                        <span class="highlight">team</span> covering Backend, DevOps, Mobile, Frontend, Infrastructure, Testing, and AI.
+                    </p>
+                    <p class="about-mission">
+                        My mission is to deliver clean architecture, robust APIs, and end-to-end solutions—tailored 
+                        to startups, enterprises, and growing businesses.
+                    </p>
+                </div>
+
+                <div class="features-grid">
+                    <div class="feature-card" data-aos="fade-up" data-aos-delay="100">
+                        <div class="feature-icon">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor">
+                                <polyline points="16 18 22 12 16 6"/>
+                                <polyline points="8 6 2 12 8 18"/>
+                            </svg>
+                        </div>
+                        <h3>5+ Years Experience</h3>
+                        <p>Building scalable, high-performance backend systems</p>
+                    </div>
+
+                    <div class="feature-card" data-aos="fade-up" data-aos-delay="200">
+                        <div class="feature-icon">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor">
+                                <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/>
+                                <circle cx="9" cy="7" r="4"/>
+                                <path d="M23 21v-2a4 4 0 0 0-3-3.87M16 3.13a4 4 0 0 1 0 7.75"/>
+                            </svg>
+                        </div>
+                        <h3>Team Collaboration</h3>
+                        <p>Working with trusted teams covering full-stack development</p>
+                    </div>
+
+                    <div class="feature-card" data-aos="fade-up" data-aos-delay="300">
+                        <div class="feature-icon">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor">
+                                <polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"/>
+                            </svg>
+                        </div>
+                        <h3>End-to-End Solutions</h3>
+                        <p>From startups to enterprises, delivering complete solutions</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="skills-section">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Skills & Tech Stack</h2>
+                <p class="section-subtitle">Comprehensive expertise across the full technology spectrum</p>
+            </div>
+
+            <div class="skills-grid">
+                <div class="skill-card" data-aos="fade-up" data-aos-delay="100">
+                    <div class="skill-icon backend">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor">
+                            <rect x="2" y="3" width="20" height="14" rx="2" ry="2"/>
+                            <line x1="8" y1="21" x2="16" y2="21"/>
+                            <line x1="12" y1="17" x2="12" y2="21"/>
+                        </svg>
+                    </div>
+                    <h3>Backend</h3>
+                    <div class="tech-list">
+                        <span class="tech-item">Django</span>
+                        <span class="tech-item">FastAPI</span>
+                        <span class="tech-item">NodeJS</span>
+                    </div>
+                </div>
+
+                <div class="skill-card" data-aos="fade-up" data-aos-delay="200">
+                    <div class="skill-icon database">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor">
+                            <ellipse cx="12" cy="5" rx="9" ry="3"/>
+                            <path d="M21 12c0 1.66-4 3-9 3s-9-1.34-9-3"/>
+                            <path d="M3 5v14c0 1.66 4 3 9 3s9-1.34 9-3V5"/>
+                        </svg>
+                    </div>
+                    <h3>Databases</h3>
+                    <div class="tech-list">
+                        <span class="tech-item">PostgreSQL</span>
+                        <span class="tech-item">MySQL</span>
+                        <span class="tech-item">MongoDB</span>
+                        <span class="tech-item">Redis</span>
+                    </div>
+                </div>
+
+                <div class="skill-card" data-aos="fade-up" data-aos-delay="300">
+                    <div class="skill-icon cloud">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor">
+                            <path d="M18 10h-1.26A8 8 0 1 0 9 20h9a5 5 0 0 0 0-10z"/>
+                        </svg>
+                    </div>
+                    <h3>DevOps & Cloud</h3>
+                    <div class="tech-list">
+                        <span class="tech-item">Docker</span>
+                        <span class="tech-item">AWS</span>
+                        <span class="tech-item">CI/CD</span>
+                    </div>
+                </div>
+
+                <div class="skill-card" data-aos="fade-up" data-aos-delay="400">
+                    <div class="skill-icon team">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor">
+                            <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/>
+                            <circle cx="9" cy="7" r="4"/>
+                            <path d="M23 21v-2a4 4 0 0 0-3-3.87M16 3.13a4 4 0 0 1 0 7.75"/>
+                        </svg>
+                    </div>
+                    <h3>Team Capabilities</h3>
+                    <div class="tech-list">
+                        <span class="tech-item">Frontend</span>
+                        <span class="tech-item">Mobile</span>
+                        <span class="tech-item">Infrastructure</span>
+                        <span class="tech-item">Testing</span>
+                        <span class="tech-item">AI</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="projects-section">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Highlighted Projects</h2>
+                <p class="section-subtitle">Showcasing scalable solutions and innovative architectures</p>
+            </div>
+
+            <div class="projects-grid">
+                <div class="project-card" data-aos="fade-up" data-aos-delay="100">
+                    <div class="project-image">
+                        <img src="images/shippingspot.jpg" alt="The ShippingSpot">
+                        <div class="project-overlay">
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <h3>The ShippingSpot</h3>
+                        <p>An enterprise-level shipping management platform leveraging Zoho Catalyst and Angular to streamline operations, automate workflows, and scale with business growth. I played a key role in backend development, API integrations, and overall system architecture.</p>
+                        <div class="project-tech">
+                            <span class="tech-tag">Zoho</span>
+                            <span class="tech-tag">NodeJS</span>
+                            <span class="tech-tag">Catalyst</span>
+                            <span class="tech-tag">Angular</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project-card" data-aos="fade-up" data-aos-delay="200">
+                    <div class="project-image">
+                        <img src="images/mmken.png" alt="MMken Platform">
+                        <div class="project-overlay">
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <h3>MMKEN B2B Platform (Saudi Arabia)</h3>
+                        <p>MMKEN Platform (Saudi Arabia)
+A business and property management platform for the Saudi market.
+I developed a previous version of this website using Django, Zoho API, Docker, and PostgreSQL, building a scalable backend, integrating Zoho services, and deploying the system in a containerized environment.</p>
+                        <div class="project-tech">
+                            <span class="tech-tag">Django</span>
+                            <span class="tech-tag">PostgreSQL</span>
+                            <span class="tech-tag">Zoho</span>
+                            <span class="tech-tag">Docker</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project-card" data-aos="fade-up" data-aos-delay="300">
+                    <div class="project-image">
+                        <img src="images/Jameel Finance.png" alt="Fintech Platform">
+                        <div class="project-overlay">
+                            <!-- <div class="project-buttons">
+                                <button class="project-btn">
+                                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor">
+                                        <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6M15 3h6v6M10 14L21 3"/>
+                                    </svg>
+                                    Live Demo
+                                </button>
+                                <button class="project-btn">
+                                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor">
+                                        <path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"/>
+                                    </svg>
+                                    Code
+                                </button>
+                            </div> -->
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <h3>Abdul Latif Jameel Finance – Fintech Platform (Egypt)</h3>
+                        <p>I am a member of the core backend team that built a large-scale fintech application for Abdul Latif Jameel Finance, one of the most prominent finance companies in the Middle East.
+This project was a major milestone in my career, giving me deep experience in secure financial systems, scalable backend architecture, and high-performance APIs powering thousands of transactions daily.</p>
+                        <div class="project-tech">
+                            <span class="tech-tag">Django</span>
+                            <span class="tech-tag">PostgreSQL</span>
+                            <span class="tech-tag">RabbitMQ</span>
+                            <span class="tech-tag">Redis</span>
+                            <span class="tech-tag">Celery</span>
+                            <span class="tech-tag">More</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+<!-- Client Reviews Section -->
+    <section id="reviews" class="reviews section">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title gradient-text">Client Reviews</h2>
+                <p class="section-subtitle">What my clients say about working with me on Upwork</p>
+                <div class="upwork-stats">
+                    <div class="stat-item" data-aos="fade-up" data-aos-delay="100">
+                        <div class="stat-icon">
+                            <i class="fas fa-star"></i>
+                        </div>
+                        <div class="stat-content">
+                            <span class="stat-number">5.0</span>
+                            <span class="stat-label">Average Rating</span>
+                        </div>
+                    </div>
+                    <div class="stat-item" data-aos="fade-up" data-aos-delay="200">
+                        <div class="stat-icon">
+                            <i class="fas fa-handshake"></i>
+                        </div>
+                        <div class="stat-content">
+                            <span class="stat-number">10+</span>
+                            <span class="stat-label">Projects Completed</span>
+                        </div>
+                    </div>
+                    <div class="stat-item" data-aos="fade-up" data-aos-delay="300">
+                        <div class="stat-icon">
+                            <i class="fas fa-redo-alt"></i>
+                        </div>
+                        <div class="stat-content">
+                            <span class="stat-number">90%</span>
+                            <span class="stat-label">Repeat Clients</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="reviews-grid">
+                <!-- Review Card 1 - Replace with your actual screenshot -->
+                <div class="review-card" data-aos="fade-up" data-aos-delay="100">
+                    <div class="review-image">
+                        <img src="images/review1.png" alt="Client Review 1" loading="lazy">
+                    </div>
+                    <div class="review-content">
+                        <h4>Exceptional Backend Development</h4>
+                    </div>
+                </div>
+
+                <!-- Review Card 2 - Replace with your actual screenshot -->
+                <div class="review-card" data-aos="fade-up" data-aos-delay="200">
+                    <div class="review-image">
+                        <img src="images/review2.png" alt="Client Review 2" loading="lazy">
+                    </div>
+                    <div class="review-content">
+                        <h4>Scalable Solutions Expert</h4>
+                    </div>
+                </div>
+
+                <!-- Review Card 3 - Replace with your actual screenshot -->
+                <div class="review-card" data-aos="fade-up" data-aos-delay="300">
+                    <div class="review-image">
+                        <img src="images/review3.png" alt="Client Review 3" loading="lazy">
+                    </div>
+                    <div class="review-content">
+                        <h4>Professional & Reliable</h4>
+                    </div>
+                </div>
+
+                <!-- Review Card 4 - Replace with your actual screenshot -->
+                <div class="review-card" data-aos="fade-up" data-aos-delay="400">
+                    <div class="review-image">
+                        <img src="images/review4.png" alt="Client Review 4" loading="lazy">
+                    </div>
+                    <div class="review-content">
+                        <h4>Outstanding Problem Solver</h4>
+                    </div>
+                </div>
+
+                <!-- Review Card 5 - Replace with your actual screenshot -->
+                <div class="review-card" data-aos="fade-up" data-aos-delay="500">
+                    <div class="review-image">
+                        <img src="images/review5.png" alt="Client Review 5" loading="lazy">
+                    </div>
+                    <div class="review-content">
+                        <h4>Fast & Efficient Delivery</h4>
+                    </div>
+                </div>
+            </div>
+
+            <!-- View More Reviews Button -->
+            <div class="reviews-cta" data-aos="fade-up" data-aos-delay="700">
+                <a href="https://www.upwork.com/freelancers/~0116b3815d228f60d7" target="_blank" class="btn btn-primary btn-large">
+                    <i class="fab fa-upwork"></i>
+                    View All Reviews on Upwork
+                    <i class="fas fa-external-link-alt"></i>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Experience Section -->
+    <section id="experience" class="experience-section">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Professional Experience</h2>
+                <p class="section-subtitle">Building the foundation of large-scale fintech platforms</p>
+            </div>
+
+            <div class="experience-card" data-aos="fade-up">
+                <div class="experience-header">
+                    <div class="experience-icon">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor">
+                            <path d="M3 21h18M5 21V7l8-4v18M19 21V11l-6-4"/>
+                        </svg>
+                    </div>
+                    <div class="experience-info">
+                        <h3>Backend Engineer</h3>
+                        <p class="company">Leading Fintech Company</p>
+                    </div>
+                </div>
+
+                <div class="experience-description">
+                    <p>
+                        Member of the core backend team responsible for creating the 
+                        <span class="highlight">fundamental architecture</span> of a large-scale fintech platform 
+                        serving thousands of users daily.
+                    </p>
+                </div>
+
+                <div class="achievements-grid">
+                    <div class="achievement-item" data-aos="fade-up" data-aos-delay="100">
+                        <div class="achievement-icon">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor">
+                                <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/>
+                                <polyline points="22,4 12,14.01 9,11.01"/>
+                            </svg>
+                        </div>
+                        <p>Designed secure, high-availability APIs with low-latency performance</p>
+                    </div>
+
+                    <div class="achievement-item" data-aos="fade-up" data-aos-delay="200">
+                        <div class="achievement-icon">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor">
+                                <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/>
+                                <polyline points="22,4 12,14.01 9,11.01"/>
+                            </svg>
+                        </div>
+                        <p>Implemented microservices that handle millions of financial transactions</p>
+                    </div>
+
+                    <div class="achievement-item" data-aos="fade-up" data-aos-delay="300">
+                        <div class="achievement-icon">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor">
+                                <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/>
+                                <polyline points="22,4 12,14.01 9,11.01"/>
+                            </svg>
+                        </div>
+                        <p>Collaborated across DevOps, AI, and infrastructure teams for scalable growth</p>
+                    </div>
+
+                    <div class="achievement-item" data-aos="fade-up" data-aos-delay="400">
+                        <div class="achievement-icon">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor">
+                                <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/>
+                                <polyline points="22,4 12,14.01 9,11.01"/>
+                            </svg>
+                        </div>
+                        <p>Led backend architecture decisions for enterprise-grade applications</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact-section">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Let's Work Together</h2>
+                <p class="section-subtitle">Ready to build something amazing? Get in touch and let's discuss your project.</p>
+            </div>
+
+            <div class="contact-form-container" data-aos="fade-up">
+                <form id="contactForm" class="contact-form">
+                    <div class="form-grid">
+                        <div class="form-group">
+                            <div class="input-wrapper">
+                                <svg class="input-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor">
+                                    <path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"/>
+                                    <circle cx="12" cy="7" r="4"/>
+                                </svg>
+                                <input type="text" name="from_name" placeholder="Full Name" required>
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            <div class="input-wrapper">
+                                <svg class="input-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor">
+                                    <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/>
+                                    <polyline points="22,6 12,13 2,6"/>
+                                </svg>
+                                <input type="email" name="reply_to" placeholder="Email Address" required>
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            <div class="input-wrapper">
+                                <svg class="input-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor">
+                                    <path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/>
+                                </svg>
+                                <input type="tel" name="whatsapp" placeholder="WhatsApp Number" required>
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            <div class="input-wrapper">
+                                <svg class="input-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor">
+                                    <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/>
+                                </svg>
+                                <input type="tel" name="mobile" placeholder="Mobile Number" required>
+                            </div>
+                        </div>
+
+                        <div class="form-group form-group-full">
+                            <div class="input-wrapper">
+                                <svg class="input-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor">
+                                    <path d="M3 21h18M5 21V7l8-4v18M19 21V11l-6-4"/>
+                                </svg>
+                                <input type="text" name="business_type" placeholder="Type of Business" required>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <div class="input-wrapper">
+                            <textarea name="message" placeholder="Tell me about your project... (Optional)" rows="6"></textarea>
+                        </div>
+                    </div>
+
+                    <div class="form-submit">
+                        <button type="submit" class="btn btn-primary btn-large">
+                            <span class="btn-text">Send Message</span>
+                            <svg class="btn-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor">
+                                <line x1="22" y1="2" x2="11" y2="13"/>
+                                <polygon points="22,2 15,22 11,13 2,9 22,2"/>
+                            </svg>
+                        </button>
+                    </div>
+                </form>
+
+                <div id="formStatus" class="form-status"></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2025 Abdelhamed. All rights reserved. Built with passion and modern tech.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
