@@ -42,7 +42,7 @@ document.addEventListener('DOMContentLoaded', function() {
         lastScrollY = currentScrollY;
 
         // Update active navigation link based on scroll position
-        const sections = ['hero', 'about', 'skills', 'projects', 'experience', 'contact'];
+        const sections = ['hero', 'about', 'skills', 'projects', 'reviews', 'experience', 'contact'];
         let currentSection = 'hero';
 
         sections.forEach(sectionId => {

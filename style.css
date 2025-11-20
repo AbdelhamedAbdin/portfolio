@@ -462,6 +462,10 @@ body {
     background: linear-gradient(135deg, #f59e0b, #d97706);
 }
 
+.skill-icon.business_product {
+    background: linear-gradient(135deg, #2ECC71, #18ce64);
+}
+
 .skill-icon svg {
     width: 1.75rem;
     height: 1.75rem;
