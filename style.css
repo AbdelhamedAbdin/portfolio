@@ -1118,6 +1118,10 @@ body {
 }
 
 @media (max-width: 480px) {
+    .r-item {
+        width: 80%;
+    }
+        
     .nav-container {
         padding: 0.5rem 1rem;
     }
