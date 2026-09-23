@@ -1151,3 +1151,99 @@ body {
         padding: 4rem 0;
     }
 }
+
+/* ==========================================
+   Rebranding Announcement
+   ========================================== */
+
+.rebrand-announcement {
+    width: 100%;
+    position: relative;
+    z-index: 20000;
+    padding: 11px 20px;
+
+    background: rgba(8, 12, 32, 0.96);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+
+    color: #fff;
+}
+
+.rebrand-announcement-content {
+    max-width: 1200px;
+    margin: 0 auto;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 12px;
+
+    font-size: 14px;
+    line-height: 1.5;
+}
+
+.rebrand-badge {
+    padding: 4px 9px;
+    border-radius: 20px;
+
+    background: rgba(0, 200, 255, 0.12);
+    border: 1px solid rgba(0, 200, 255, 0.25);
+
+    color: #29d3ff;
+    font-size: 11px;
+    font-weight: 700;
+
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+}
+
+.rebrand-message {
+    color: rgba(255, 255, 255, 0.88);
+}
+
+.rebrand-message strong {
+    color: #fff;
+    font-weight: 600;
+}
+
+.rebrand-link {
+    display: inline-flex;
+    align-items: center;
+    gap: 5px;
+
+    color: #29d3ff;
+    font-weight: 600;
+    text-decoration: none;
+
+    transition: opacity 0.2s ease;
+}
+
+.rebrand-link:hover {
+    opacity: 0.75;
+    text-decoration: underline;
+}
+
+/* Mobile */
+@media (max-width: 600px) {
+    .rebrand-announcement {
+        padding: 10px 15px;
+    }
+
+    .rebrand-announcement-content {
+        flex-wrap: wrap;
+        gap: 6px 9px;
+        text-align: center;
+    }
+
+    .rebrand-badge {
+        display: none;
+    }
+
+    .rebrand-message {
+        width: 100%;
+        font-size: 13px;
+    }
+
+    .rebrand-link {
+        font-size: 13px;
+    }
+}
